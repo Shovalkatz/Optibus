@@ -1,0 +1,50 @@
+.pageTitle {
+    font-size: 46px;
+    text-align: center;
+    margin: 20px 0 30px 0;
+    font-weight: bold;  
+}
+
+.chart {
+    display:table;
+    table-layout: fixed;   
+    height:425px;
+    width: 70%;
+    margin: auto;
+    padding: 0px;
+    background-color: #CCCCCC;
+    background-position: 0 5%, 0px 24%, 0 43%, 0 62%, 0 81%, 0 100%;
+    background-image: url('../../assets/photos/whitepx.jpeg'), url('../../assets/photos/whitepx.jpeg'), url('../../assets/photos/whitepx.jpeg'), url('../../assets/photos/whitepx.jpeg'), url('../../assets/photos/whitepx.jpeg'), url('../../assets/photos/whitepx.jpeg');
+    background-repeat: repeat-x, repeat-x, repeat-x, repeat-x, repeat-x, repeat-x;
+    background-size: 100% 1px;
+}
+    
+li {
+    position:relative;
+    display:table-cell;
+    vertical-align:bottom;
+    height:75%;
+    width: 4%;
+}
+
+span {
+    margin:0 1em;
+    display: block;
+}
+
+span:before {
+    position:absolute;
+    left:0;right:0;top:100%;
+    display:block;
+    text-align:center;
+    content:attr(data-before-content);
+    word-wrap: break-word;
+}
+
+.axis div {
+    margin: -10px 0 72px 0;
+    background-color: white;
+    width: 40px;
+    text-align: center;
+}
+  

@@ -1,0 +1,16 @@
+<div>
+  <div class="pageTitle">Optibus Trips per Hour</div>
+  <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '14px' }"></ngx-loading>
+  <ul class="chart">
+    <li class="axis">
+      <div>{{max | number}}</div>
+      <div>{{max*0.8 | number}}</div>
+      <div>{{max*0.6 | number}}</div>
+      <div>{{max*0.4 | number}}</div>
+      <div>{{max*0.2 | number}}</div>
+    </li>
+    <li *ngFor="let trip of tripsPerHour; let i = index">
+        <span [ngStyle]="styleSpan(trip)" title="{{trip}}" attr.data-before-content="{{i}}"></span>
+    </li>
+  </ul>    
+</div>
